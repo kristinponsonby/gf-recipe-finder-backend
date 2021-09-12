@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_12_135542) do
+ActiveRecord::Schema.define(version: 2021_09_12_161046) do
 
   create_table "details", force: :cascade do |t|
     t.string "difficulty"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(version: 2021_09_12_135542) do
     t.string "category"
     t.string "ingredients"
     t.string "image_url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
