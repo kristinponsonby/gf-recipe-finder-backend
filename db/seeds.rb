@@ -6,39 +6,58 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+user = User.create(username: "bakerlady88")
+
+
 birthday_cake = Recipe.create(
     name: "Birthday Cake",
     category: "Cakes",
     ingredients: "Gluten-free flour, milk, sugar, eggs, butter, sprinkles",
     image_url: "https://reallygreatfood.com/wp-content/uploads/2015/12/bbdaycake-1500x1125.jpg",
+    user: user
 )
 
 cc_cookies = Recipe.create(
     name: "Chocolate Chip Cookies",
     category: "Cookies",
     ingredients: "Gluten-free flour, chocolate chips, sugar, milk, eggs, butter, baking soda",
-    image_url: "https://www.girlversusdough.com/wp-content/uploads/2020/08/gluten-free-chocolate-chip-cookies-4-600x900.jpg"
+    image_url: "https://www.girlversusdough.com/wp-content/uploads/2020/08/gluten-free-chocolate-chip-cookies-4-600x900.jpg",
+    user: user
 )
 
 fudge_brownies = Recipe.create(
     name: "Fudge Brownies",
     category: "Brownies",
     ingredients: "Gluten-free flour, cocoa powder, sugar, baking soda, buttermilk, eggs",
-    image_url: "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/02/Gluten-Free-Brownies-3.jpg"
+    image_url: "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/02/Gluten-Free-Brownies-3.jpg",
+    user: user
 )
 
 berry_cake = Recipe.create(
     name: "Berry Layer Cake",
     category: "Cakes",
     ingredients: "Gluten-free flour, berries, eggs, milk, butter, heavy cream, sugar",
-    image_url: "https://lexiscleankitchen.com/wp-content/uploads/2018/05/LCK-BDAY-CAKE1.jpg"
+    image_url: "https://lexiscleankitchen.com/wp-content/uploads/2018/05/LCK-BDAY-CAKE1.jpg",
+    user: user
 )
 
 pb_cookies = Recipe.create(
     name: "Peanut Butter Cookies",
     category: "Cookies",
     ingredients: "Gluten-free flour, peanut butter, eggs, brown sugar, butter, milk",
-    image_url: "https://i2.wp.com/thebetteredblondie.com/wp-content/uploads/2021/03/IMG_3516.jpg?fit=1475%2C2048&ssl=1"
+    image_url: "https://i2.wp.com/thebetteredblondie.com/wp-content/uploads/2021/03/IMG_3516.jpg?fit=1475%2C2048&ssl=1",
+    user: user
+)
+
+bb_cobbler = Recipe.create(
+    name: "Browned Butter Cobbler",
+    category: "Pies and Cobblers",
+    ingredients: "1 tablespoon of softened or melted butter to grease the pan, 1 1/3 cup lightly packed light brown sugar, 2 tablespoons corn starch, 
+    1/4 teaspoon ground ginger, pinch of salt, 1 1/2 cups fresh blueberries, 2 pints fresh strawberries, rinsed and sliced, 3/4 cup unsalted butter, 
+    melted until browned, 1 teaspoon pure vanilla extract 1 1/2 cup gluten-free flour, 1 1/2 teaspoon baking powder, 1/2 teaspoon kosher salt, 1 large egg divided, 
+    yolk for the dough and egg white to brush on top of the dough, splash of milk", 
+    image_url: "https://32mkaa3h94o148joxo1e67fb-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/0S9A7713.jpg",
+    user: user
 )
 
 
@@ -124,7 +143,23 @@ pb_cookies.details.create(
     Use rubber spatula to fold wet and dry ingredients together until fully combine and then use a cookie scoop to scoop out dough and roll into a ball. You should get about 24 total
     
     Place the balls on a lined baking sheet (parchment paper or a silicone mat) and then gently press the top of each ball down with the back of a fork (vertical and horizontal) to make the classic criss cross pattern (can sprinkle granulated sugar on top if desired) 
-    Bake for 11-13 minutes, be careful not to over bake, you want them to be soft and chewy. Let cool before removing from the baking sheet. Store in an airtight container or ziplock bag",
+    Bake for 11-13 minutes, be careful not to over bake, you want them to be soft and chewy. Let cool before removing from the baking sheet. Store in an airtight container or ziplock bag.",
     image: "https://i0.wp.com/thebetteredblondie.com/wp-content/uploads/2021/04/GF-PEANUT-BUTTER-COOKIES-STILL4.jpg?w=1080&ssl=1",
     recipe_id: pb_cookies.id
+)
+
+bb_cobbler.details.create(
+    difficulty: "easy",
+    cook_time: "1 hour",
+    instructions: "Place a rack in the upper third of the oven and preheat oven to 375 degrees F. Lightly grease a 9×13-inch baking dish with softened or melted butter and set aside.
+    In a small bowl stir together brown sugar, cornstarch, ginger, and salt until evenly combined.
+    Place the blueberries and sliced strawberries in the prepared baking dish. Add the sugar mixture and toss gently until evenly coated. Set aside while you prepare the topping. The strawberries will start to get juicy – that’s perfect!
+    To prepare the topping, start by melted the butter just past when it pops and sizzles. The butter will become fragrant and the milk solids will toast and brown. Remove from the pan and place in a medium bowl to cool slightly.
+    Add the sugar, vanilla, flour, baking powder, and salt to the bowl with butter. Add the beaten egg yolk and use a fork to work the ingredients into a shaggy dough. I found it easiest to also use my fingers to work the dough together to combine the ingredients evenly.
+    Press the dough into rough coins, this can be messy and layer atop the prepared strawberries and blueberries. Cover the dish though of course fruit bits will peek through.
+    
+    In a small bowl whisk together egg white and a splash of milk. Lightly brush the cobbler top and sprinkle generously with turbinado sugar. Bake for 25 – 30 minutes until the fruit is bubbling and the top is lightly golden. Rotate the dish in the oven halfway through baking to evenly brown.
+    Remove from the oven and allow to rest for 15 minutes to cool just slightly before scooping and serving with vanilla ice cream. Cobbler is also delicious at room temperature or cold from the fridge. There’s no wrong way to enjoy it! Cobbler will last, covered in the refrigerator, for uo two 3 days.",
+    image: "https://32mkaa3h94o148joxo1e67fb-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/0S9A7498.jpg",
+    recipe_id: bb_cobbler.id
 )
