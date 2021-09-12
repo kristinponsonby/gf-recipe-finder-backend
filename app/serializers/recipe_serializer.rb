@@ -1,5 +1,5 @@
 class RecipeSerializer < ActiveModel::Serializer
-  attributes :id, :name, :category, :ingredients, :username
+  attributes :id, :name, :category, :ingredients, :image_url, :username
   has_many :details
 
   def username
