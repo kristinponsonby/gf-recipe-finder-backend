@@ -1,24 +1,5 @@
-# README
+Welcome to Sweet Tooth!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This single page app is for browsing gluten-free baking recipes. Users may browse or add their own! View recipe's by title and category.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The front end of the app can be found here: https://github.com/kristinponsonby/gf-recipe-finder-frontend
