@@ -52,11 +52,30 @@ pb_cookies = Recipe.create(
 bb_cobbler = Recipe.create(
     name: "Browned Butter Cobbler",
     category: "Pies and Cobblers",
-    ingredients: "1 tablespoon of softened or melted butter to grease the pan, 1 1/3 cup lightly packed light brown sugar, 2 tablespoons corn starch, 
-    1/4 teaspoon ground ginger, pinch of salt, 1 1/2 cups fresh blueberries, 2 pints fresh strawberries, rinsed and sliced, 3/4 cup unsalted butter, 
-    melted until browned, 1 teaspoon pure vanilla extract 1 1/2 cup gluten-free flour, 1 1/2 teaspoon baking powder, 1/2 teaspoon kosher salt, 1 large egg divided, 
-    yolk for the dough and egg white to brush on top of the dough, splash of milk", 
+    ingredients: "melted butter, fresh blueberries and strawberries, cornstarch, baking soda, pinch of salt, white sugar, brown sugar, gluten-free flour", 
     image_url: "https://32mkaa3h94o148joxo1e67fb-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/0S9A7713.jpg",
+    user: user
+)
+macarons = Recipe.create( 
+    name: "French Macarons",
+    category: "Cookies",
+    ingredients: "almond flour, eggs, egg whites, powdered sugar, food coloring, pinch of salt, unsalted butter",
+    image_url: "https://iambaker.net/wp-content/uploads/2018/05/french-macarons-14-1200x1798.jpg",
+    user: user
+)
+carrot_cake = Recipe.create(
+    name: "Gluten-free Carrot Cake",
+    category: "Cakes",
+    ingredients: "gluten-free cake flour, unsalted butter, pinch of salt, whole eggs, white sugar, whole milk, whole carrots",
+    image_url: "https://www.snixykitchen.com/wp-content/uploads/2020/04/Gluten-Free-Carrot-Cake-12-2.jpg",
+    user: user
+)
+
+oatmeal_cps = Recipe.create(
+    name: "Oatmeal Cream Pies",
+    category: "Cookies",
+    ingredients: "rolled oats, pinch of salt, brown sugar, granulated sugar, vanilla extract, large brown eggs, gluten free flour, unsalted butter",
+    image_url: "https://www.purelykaylie.com/wp-content/uploads/2020/09/Vegan-Oatmeal-Cream-Pies-350K-14.jpg",
     user: user
 )
 
@@ -110,25 +129,19 @@ fudge_brownies.details.create(
 berry_cake.details.create(
     difficulty: "difficult",
     cook_time: "1.5 hours",
-    instructions: "Preheat oven to 350 degrees. Place a medium metal bowl and a metal whisk in the freezer to chill. Prepare the cake pans using the shortening + flour + parchment method mentioned in the notes above.
-    If you have a stand mixer, use that with the paddle attachment. Add the butter and the sugar and mix on medium to medium-high speed until it is white and starting to get fluffy. This may take 5 minutes.
-    Mix the oil and vanilla in a glass measuring cup. Stop the mixer and scrape down the sides of the bowl. Turn the mixer on to low, and drizzle in the oil and vanilla. Blend on medium to medium-high again until the mixture is very white and fluffy.
-    While this is mixing, sift the flour, baking powder, and salt together.
-    Once the sugar-oil-butter-vanilla mixture is the right consistency, add in the eggs and egg yolks one at a time, mixing well after each one.
-    Stop the mixture to scrape down the sides of the bowl with a spatula.
+    instructions: "Preheat oven to 350 degrees. 
+    If you have a stand mixer, use that with the paddle attachment. Add the butter and the sugar and mix on medium to medium-high speed until it is white and starting to get fluffy. 
+    Mix the oil and vanilla in a glass measuring cup. Turn the mixer on to low, and drizzle in the oil and vanilla. Blend on medium to medium-high again until the mixture is very white and fluffy.
+    While this is mixing, sift the flour, baking powder, and salt together. Once the sugar-oil-butter-vanilla mixture is the right consistency, add in the eggs and egg yolks one at a time.
     Add 1/3 of the flour mixture then mix slowly until incorporated. Add in 1/2 of the buttermilk and mix until just incorporated. Follow with 1/3 more flour, then the rest of the buttermilk, and finally the rest of the flour.
-    While the batter is mixing, remove the bowl and whisk from the freezer. Pour in the heavy cream and whisk by hand until soft peaks form.
-    Scrape down the sides of the bowl of cake batter, then gently fold in the whipped heavy cream.
-    Divide the batter evenly among the cake pans, and bake until the center is cooked through. This took around 30-35 minutes, but oven temperatures vary, so keep an eye on it.
+    Pour in the heavy cream and whisk by hand until soft peaks form. Gently fold in the whipped heavy cream.
+    Divide the batter evenly among the cake pans, and bake until the center is cooked through, 30-35 minutes.
     Allow the cake to cool in the pans for about 15 minutes, then gently flip onto cooling racks. Once completely cooled, you can slice in half with a serrated knife (if you used 2 cake pans), to make 4 layers.
     While the cake is cooking, or ahead of time, make the vanilla cream cheese buttercream (recipe below).
-    Take one of the layers of cake, and place it on a cake board or cake carrier. I always like to add a dollop of icing onto the cake board or cake carrier first, so that the cake doesn't slide around.
-    Add some icing (make sure it is warm enough to spread - maybe a little cooler than room temperature) to the first layer and spread evenly. You'll want about 1/8 inch of icing.
-    Then spread 1 Tbsp jam over the buttercream. Then lay some of the sliced berries onto the layer. You'll use 1/3 of them, because you will do this 3 times.
+    Add some icing to the first layer and spread evenly. Then spread 1 Tbsp jam over the buttercream. Then lay some of the sliced berries onto the layer. 
     Add another layer of cake, and repeat with the buttercream, jam, then berries. Then repeat again with another layer of cake, buttercream, jam, and berries.
-    Top with the final layer of cake. Carefully add a thin layer of buttercream to the whole outside of the cake. Refrigerate for 30 minutes (this is called the crumb coat).
-    Remove from the refrigerator and add on the final layer of buttercream - the amount is up to you.
-    Garnish the cake before refrigerating it again with extra berries, fresh mint leaves, and/or vanilla macarons.",
+    Top with the final layer of cake. Carefully add a thin layer of buttercream to the whole outside of the cake. Refrigerate for 30 minutes.
+    Remove from the refrigerator and add on the final layer of buttercream - the amount is up to you.",
     image: "https://i0.wp.com/sevenlayercharlotte.com/wp-content/uploads/2019/04/mothersdaycollab-211.jpg?w=2000",
     recipe_id: berry_cake.id
 )
@@ -151,7 +164,7 @@ pb_cookies.details.create(
 bb_cobbler.details.create(
     difficulty: "easy",
     cook_time: "1 hour",
-    instructions: "Place a rack in the upper third of the oven and preheat oven to 375 degrees F. Lightly grease a 9×13-inch baking dish with softened or melted butter and set aside.
+    instructions: "Preheat oven to 375 degrees F. Lightly grease a 9×13-inch baking dish with softened or melted butter and set aside.
     In a small bowl stir together brown sugar, cornstarch, ginger, and salt until evenly combined.
     Place the blueberries and sliced strawberries in the prepared baking dish. Add the sugar mixture and toss gently until evenly coated. Set aside while you prepare the topping. The strawberries will start to get juicy – that’s perfect!
     To prepare the topping, start by melted the butter just past when it pops and sizzles. The butter will become fragrant and the milk solids will toast and brown. Remove from the pan and place in a medium bowl to cool slightly.
@@ -162,4 +175,42 @@ bb_cobbler.details.create(
     Remove from the oven and allow to rest for 15 minutes to cool just slightly before scooping and serving with vanilla ice cream. Cobbler is also delicious at room temperature or cold from the fridge. There’s no wrong way to enjoy it! Cobbler will last, covered in the refrigerator, for uo two 3 days.",
     image: "https://32mkaa3h94o148joxo1e67fb-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/0S9A7498.jpg",
     recipe_id: bb_cobbler.id
+)
+
+macarons.details.create(
+    difficulty: "difficult",
+    cook_time: "1.5 hours",
+    instructions: "Sift the almond flour and powdered sugar together and set aside. Beat the egg whites on medium until foamy. Add in the cream of tartar and salt. Continue beating and add in about 1 tablespoon sugar at a time. Mix until soft peaks. Add the vanilla and food coloring. Continue mixing until stiff peaks. Remove the bowl from the machine.
+    Sift the almond flour and powdered sugar again but into the bowl of the meringue. Using a rubber scraper, gently fold the ingredients together. The batter will thin up as you mix. 
+    Spoon batter into a piping bag fitted with a A2 round piping tip. Line a baking sheet with parchment paper with templates underneath. Holding the bag vertical, gently squeeze the batter out until batter reaches the inside line of the circle on the template. 
+    Once all the batter is piped, slam the pan down on the counter a few times so that all the air bubbles are released. If you see some air bubbles at the top you and pop them with a toothpick. Let the batter dry for 45-60 minutes. For humid climates or rainy days, aim for 60 minutes.
+    About 10 minutes before drying time is up, preheat the oven to 300 degrees F. Bake for 20 minutes on the middle rack and then remove from oven and let cool on the pan for 5 minutes. Then slide the parchment paper onto a cooling rack. Fill once completely cooled.",
+    image: "https://iambaker.net/wp-content/uploads/2018/05/french-macarons-7.jpg",
+    recipe_id: macarons.id
+)
+
+carrot_cake.details.create(
+    difficulty: "medium",
+    cook_time: "1.5 hours",
+    instructions: "Preheat the oven to 350°F. Combine the milk and vinegar in a small measuring cup and set aside. In a medium bowl, whisk together the chestnut flour, oat flour, sweet rice flour, baking soda, baking powder, salt, and spices. Set aside.
+    Cream together the sugars and butter until smooth and fluffy, 3-5 minutes. Add coconut oil and beat until smooth and scraping down the sides as needed.
+    Add the vanilla and orange zest, mixing until smooth and scraping down the sides as needed. Add the eggs, mixing until just combined. Add the carrots and mix well to combine, scraping down the sides as needed.
+    Add half of the dry ingredients in two parts alternatively with the milk and mix until just combined, scraping down the sides as needed. Fold in the walnuts.
+    Bake on the middle rack for 30-35 minutes until a toothpick inserted into the middle comes out clean or with just a few crumbs and the center springs back without leaving an indent when gently pressed.
+    Let cool for 5 minutes before inverting onto a wire rack twice until upright to cool completely before frosting.
+    Meanwhile, prepare a batch of buttercream frosting. Frost fully cooled cake layers and assemble.",
+    image: "https://www.snixykitchen.com/wp-content/uploads/2020/04/Gluten-Free-Carrot-Cake-1.jpg",
+    recipe_id: carrot_cake.id
+)
+
+oatmeal_cps.details.create(
+    difficulty: "medium",
+    cook_time: "1 hour",
+    instructions: "Preheat the oven to 350 degrees F. Line a large baking sheet with parchment paper.
+    Add the butter, brown sugar, and granulated sugar to a large bowl. Using a handheld electric mixer or stand mixer, cream the butter and sugars together. Cream for 3-5 minutes, or until light and fluffy. Add the flax egg, molasses, and vanilla extract. Cream together once more until evenly combined.
+    In a separate bowl, combine the quick oats, all-purpose flour, baking soda, cinnamon, baking powder, salt, and nutmeg. Mix together.
+    Fold the dry ingredients into the wet ingredients. Mix until just combined.
+    Scoop and roll the oatmeal cookie dough into round balls. Transfer to the baking sheet. Bake for 14-16 minutes, or until the edges are light golden brown but the center is slightly undercooked",
+    image: "https://www.purelykaylie.com/wp-content/uploads/2020/09/Vegan-Oatmeal-Cream-Pies-350K-2.jpg",
+    recipe_id: oatmeal_cps.id
 )
